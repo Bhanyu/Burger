@@ -56,6 +56,7 @@ li {
   height: 100px;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 @media (max-width: 1024px) {
   #main-header .container .bottomhead {
@@ -148,10 +149,14 @@ li {
 #main-header .container .bottomhead nav {
   max-width: 70%;
   margin-left: 2%;
+  overflow: hidden;
+  height: 100%;
 }
 #main-header .container .bottomhead nav .navigation {
   max-width: 100%;
   flex-wrap: nowrap;
+  height: 100%;
+  overflow: hidden;
   height: 100%;
 }
 @media (max-width: 1024px) {

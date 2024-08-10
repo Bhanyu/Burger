@@ -1,0 +1,296 @@
+#cateringFirstSec{
+   
+    max-width: 100%;
+    padding-bottom: 80px;
+    .container{
+        max-width: 1200px;
+    
+        margin: 0 auto;
+        padding: 0 ;
+        .homeCatering{
+        
+            display: flex;
+            padding: 30px 0;
+            li{
+                margin: 0 10px;
+                a{
+                    color:#7d7d7d;
+
+span{
+    margin-left: 20px;
+}
+                }
+            }
+        }
+        .cateringCookies{
+           
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            margin-top: 50px;
+            .innerDesc{
+                max-width: 45%;
+             
+                padding-right: 50px;
+                h1{
+                    font-family: $primaryFont;
+                    font-size: 70px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 18px;
+                    font-family: $secondaryFont;
+                    line-height: 28px;
+                  }
+                  button{
+                    background-color: #7d7d7d;
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: $fifthColor;
+                    font-family: $primaryFont;
+                   font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 12px;
+                    i{
+                        margin-left: 12px;
+                    }
+                  }
+            }
+            .innerImg{
+                max-width: 50%;
+              
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+#occasionPart{
+    background-color: $secondaryColor;
+    max-width: 100%;
+    position: relative;
+   padding-bottom: 0px;
+    .greenSalad{
+      position: absolute;
+      left: -1px;
+      top: -10%;
+      max-width: 10%;
+      img{
+        max-width: 100%;
+      
+       transform: rotateY(180deg);
+      }
+    }
+    .container{
+    
+      max-width: 100%;
+      padding: 40px 0;
+      @media (max-width:568px) {
+       padding: 30px;
+      }
+      @media(min-width:569px) and (max-width:768px) {
+       padding: 30px 60px;
+      }
+      @media(min-width:768px) and (max-width:1024px) {
+        padding: 30px 90px;
+       }
+      .occasionContent{
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius: 10px;
+        display: flex;
+        padding: 40px 50px;
+        justify-content:space-between;
+        @media (max-width:1024px) {
+          flex-direction: column;
+          padding: 40px 0 25px;
+          max-width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+        .occasionImg{
+          // background-color: red;
+          width: 45%;
+          border-radius: 5px;
+          @media (max-width:1024px) {
+         width: 100%;
+          }
+          img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+        }
+        .occasionDesc{
+          width: 45%;
+          @media (max-width:1024px) {
+  width: 100%;
+  padding: 0 30px;
+  margin-top: 30px;
+          }
+          // background-color: blueviolet;
+         
+          h2{
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: bold;
+            @media (max-width:1024px) {
+             text-align: center;
+             font-size: 28px;
+             font-weight: 700;
+            }
+          }
+          p{
+            font-size: 18px;
+            font-family: "Barlow", sans-serif;
+            line-height: 28px;
+            &.boldText{
+                font-weight: bold;
+            }
+          }
+          .occasionBtns{
+           
+            padding: 0 ;
+            margin-top: 20px;
+       
+         display: flex;
+         align-items: center;
+         @media (max-width:1024px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+        }
+            
+            button{
+                background-color: #7d7d7d;
+                padding: 10px 40px;
+                border-radius: 5px;
+                border: none;
+                background-color: $fifthColor;
+                font-family: $primaryFont;
+               font-size: 20px;
+                font-weight: 600;
+                margin-top: 12px;
+               
+                i{
+                    margin-left: 12px;
+                }
+              }
+          
+          }
+        }
+      }
+    }
+  }
+#cateringDetailsPart{
+   
+    max-width: 100%;
+    padding-bottom: 50px;
+    .container{
+        max-width: 1200px;
+       
+        margin: 0 auto;
+        padding:80px  0 0; 
+        .detailMainTitle{
+            h2{
+                font-family: $primaryFont;
+                font-size: 35px;
+                margin-bottom: 20px;
+                font-weight: 700;
+                text-align: center;
+                @media (max-width:1024px) {
+               text-align: center;
+               font-size: 28px;
+                }
+              }
+        }
+        .cateringDetailsContent{
+          
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            // justify-content: start;
+            // align-items: start;
+            align-items: center;
+            justify-content: center;
+          padding: 0;
+            .cateringDetailsItem{
+                max-width: 30%;
+                margin:  20px;
+            
+                text-align: center;
+                h2{
+                    font-size: 23px;
+                    font-weight: 500;
+                    font-family: $primaryFont;
+                    margin-top: 30px;
+                }
+             
+            }
+        }
+
+    }
+}
+
+#burgerServicePart{
+   background-color: $sixthColor;
+    max-width: 100%;
+    padding: 80px 0 100px;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+     
+        padding: 0;
+        .burgerServiceContent{
+            max-width: 100%;
+           
+            display: flex;
+            padding: 0 30px;
+          
+            .serviceContentItem{
+                max-width: 45%;
+               
+               &:nth-child(2){
+                margin: 0 0px 0 auto;
+               }
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 320px;
+              
+                }
+                h3{
+                    font-family: $primaryFont;
+                    font-size: 35px;
+                    margin: 20px 0;
+                    font-weight: 700;
+                    text-align: center;
+                    @media (max-width:1024px) {
+                   text-align: center;
+                   font-size: 28px;
+                    }
+                  }
+                  p{
+                    font-size: 18px;
+                    font-family: "Barlow", sans-serif;
+                    line-height: 28px;
+                 
+                  }
+          
+
+            }
+
+        }
+    }
+}
