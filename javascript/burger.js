@@ -6,6 +6,9 @@ const tophead = document.querySelector(".tophead")
 const closeBar = document.querySelector(".hiddenClose")
 const rowBurgersMenu = document.getElementById("burgerMenuBox")
 const rowOrderWays = document.getElementById('rowOrderWays')
+const topHeadClose = document.querySelector(".close")
+const dropdown = document.querySelector(".dropdown");
+const menu = document.querySelector(".navItem1")
 mobMenuBar.addEventListener("click", function(){
     mobMenuBar.style.display = "none"
     closeBar.style.display = "block"
@@ -84,7 +87,9 @@ burgers.forEach((burger)=>{
     const btn = document.createElement('button');
     btn.textContent = burger.burgerBtn;
     menuCardBtn.appendChild(btn);
-
+btn.addEventListener("click", ()=>{
+   window.location.href = `homeSinglePage.html?id=${burger.id}`
+})
     menuCard.appendChild(burgerImg)
     menuCard.appendChild(menuCardBtn)
     colDiv.appendChild(menuCard);
@@ -100,22 +105,22 @@ const orderWays = [
         , wayBtn:"BUY GIFT CARDS"
     },
     {
-        id:2, wayImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=360,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Gift_Cards_option_3_d252a279fd.png",
-       wayHead:"GIFT CARD",
-       wayDesc:"Purchase virtual gift cards! Available in $5-$500, choose the gift that fits the occasion"
+        id:2, wayImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=360,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/intro_new_4141d94cf5.jpg",
+       wayHead:"JOIN SMASHREWARDS",
+       wayDesc:"Order Smashburger fast, save your favorite orders, earn points, and get free food. It’s really that simple"
        
         , wayBtn:"BUY GIFT CARDS"
     },
     {
-        id:3, wayImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=360,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Gift_Cards_option_3_d252a279fd.png",
-       wayHead:"GIFT CARD",
-       wayDesc:"Purchase virtual gift cards! Available in $5-$500, choose the gift that fits the occasion"
+        id:3, wayImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=360,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Catering_homepage_63e8289324.jpeg",
+       wayHead:"CATERING",
+       wayDesc:"Make your next event a Smash!"
        
         , wayBtn:"BUY GIFT CARDS"
     },
     {
-        id:4, wayImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=360,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Gift_Cards_option_3_d252a279fd.png",
-       wayHead:"GIFT CARD",
+        id:4, wayImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=360,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Home_Page_News_a9da9f1f9f.png",
+       wayHead:"WE MADE HEADLINES!",
        wayDesc:"Purchase virtual gift cards! Available in $5-$500, choose the gift that fits the occasion"
        
         , wayBtn:"BUY GIFT CARDS"
@@ -128,6 +133,7 @@ orderWays.forEach((way)=>{
     wayCard.classList.add('wayCard');
 
     const wayCardImg = document.createElement('div');
+    wayCardImg.classList.add('wayCardImg')
     const Wayimg = document.createElement('img');;
     Wayimg.src = way.wayImg;
     wayCardImg.appendChild(Wayimg);
@@ -135,10 +141,12 @@ orderWays.forEach((way)=>{
 
 
     const wayCardDesc =document.createElement('div');
+    wayCardDesc.classList.add('wayCardDesc');
     const wayCardHead = document.createElement('h2');
     wayCardHead.textContent = way.wayHead;
     const wayCardText = document.createElement('p');
     const wayCardBtn = document.createElement('button');
+    wayCardBtn.classList.add('wayCardBtn')
     wayCardBtn.textContent  =way.wayBtn
     wayCardText.textContent = way.wayDesc;
     wayCardDesc.appendChild(wayCardHead);
@@ -148,4 +156,11 @@ wayCard.appendChild(wayCardImg);
 wayCard.appendChild(wayCardDesc)
 wayColDiv.appendChild(wayCard)
 rowOrderWays.appendChild(wayColDiv)
+})
+topHeadClose.addEventListener("click", ()=>{
+    tophead.style.display = "none"
+})
+
+menu.addEventListener("click", ()=>{
+   dropdown.classList.toggle("showMenu")
 })
