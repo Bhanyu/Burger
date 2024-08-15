@@ -1,5 +1,34 @@
 const cateringDetailsContent = document.querySelector('.cateringDetailsContent')
 const burgerServiceContent = document.querySelector(".burgerServiceContent")
+const addOnesRow=document.querySelector(".addOnesContent")
+
+const mobMenuBar = document.querySelector(".showBtn")
+const mobMenuContent= document.querySelector(".menuMobContent");
+
+const closeBar = document.querySelector(".hiddenClose")
+const rowBurgersMenu = document.getElementById("burgerMenuBox")
+const rowOrderWays = document.getElementById('rowOrderWays')
+
+const dropdown = document.querySelector(".dropdown");
+const menu = document.querySelector(".navItem1")
+mobMenuBar.addEventListener("click", function(){
+    mobMenuBar.style.display = "none"
+    closeBar.style.display = "block"
+
+    mobMenuContent.style.display = "block"
+})
+
+closeBar.addEventListener(("click"), function () {
+    mobMenuBar.style.display = "block"
+    closeBar.style.display = "none"
+ 
+    mobMenuContent.style.display = "none"
+})
+
+
+menu.addEventListener("click", ()=>{
+   dropdown.classList.toggle("showMenu")
+})
 const cateringDetails = [
     {
         "id": 1,detalImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/shopping_bags_icon_83b6022c1d.png", detalName:"High Quality Smashburger Favorites to Choose From"
@@ -49,4 +78,28 @@ burgerServices.forEach((serviceItem)=>{
   </div>
     `
     burgerServiceContent.innerHTML += serviceContent
+})
+
+
+const addOnes = [
+    {
+        id:1, addOnName:"Sides", addOnImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Image_bd161d5db1.png"
+    },
+    {
+id:2, addOnName:"Desserts", addOnImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Image_1_364c43d3d1.png"
+    },
+    {
+        id:3, addOnName:"Drinks", addOnImg:"https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/Image_2_9db7a898ad.png"
+    }
+]
+
+addOnes.forEach((addOne)=>{
+    const addOneHTML = `
+    <div class=" col-md-4 addOnsCardCol">
+    <div class="addOnesCard">
+      
+        <img src="${addOne.addOnImg}" alt="">
+      <h3>${addOne.addOnName}</h3>
+    </div>`
+    addOnesRow.innerHTML += addOneHTML
 })

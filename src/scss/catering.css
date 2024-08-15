@@ -294,10 +294,20 @@ li {
   max-width: 100%;
   padding-bottom: 80px;
 }
+@media (max-width: 1024px) {
+  #cateringFirstSec {
+    padding-bottom: 50px;
+  }
+}
 #cateringFirstSec .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+}
+@media (max-width: 1024px) {
+  #cateringFirstSec .container {
+    max-width: 100%;
+  }
 }
 #cateringFirstSec .container .homeCatering {
   display: flex;
@@ -308,9 +318,20 @@ li {
 }
 #cateringFirstSec .container .homeCatering li a {
   color: #7d7d7d;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#cateringFirstSec .container .homeCatering li a.linkText {
+  color: black;
 }
 #cateringFirstSec .container .homeCatering li a span {
   margin-left: 20px;
+}
+@media (max-width: 1024px) {
+  #cateringFirstSec .container .homeCatering {
+    padding: 30px 0 30px 30px;
+  }
 }
 #cateringFirstSec .container .cateringCookies {
   display: flex;
@@ -318,14 +339,34 @@ li {
   max-width: 100%;
   margin-top: 50px;
 }
+@media (max-width: 1024px) {
+  #cateringFirstSec .container .cateringCookies {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+  }
+}
 #cateringFirstSec .container .cateringCookies .innerDesc {
   max-width: 45%;
   padding-right: 50px;
+}
+@media (max-width: 1024px) {
+  #cateringFirstSec .container .cateringCookies .innerDesc {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 #cateringFirstSec .container .cateringCookies .innerDesc h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 70px;
   font-weight: 700;
+}
+@media (max-width: 1024px) {
+  #cateringFirstSec .container .cateringCookies .innerDesc h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 #cateringFirstSec .container .cateringCookies .innerDesc p {
   font-size: 18px;
@@ -346,13 +387,30 @@ li {
 #cateringFirstSec .container .cateringCookies .innerDesc button i {
   margin-left: 12px;
 }
+@media (max-width: 1024px) {
+  #cateringFirstSec .container .cateringCookies .innerDesc button {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    padding: 0;
+    text-align: center;
+  }
+}
 #cateringFirstSec .container .cateringCookies .innerImg {
   max-width: 50%;
   border-radius: 5px;
 }
+@media (max-width: 1024px) {
+  #cateringFirstSec .container .cateringCookies .innerImg {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
 #cateringFirstSec .container .cateringCookies .innerImg img {
   width: 100%;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #occasionPart {
@@ -366,6 +424,11 @@ li {
   left: -1px;
   top: -10%;
   max-width: 10%;
+}
+@media (max-width: 1024px) {
+  #occasionPart .greenSalad {
+    display: none;
+  }
 }
 #occasionPart .greenSalad img {
   max-width: 100%;
@@ -482,6 +545,13 @@ li {
 #occasionPart .container .occasionContent .occasionDesc .occasionBtns button i {
   margin-left: 12px;
 }
+@media (max-width: 1024px) {
+  #occasionPart .container .occasionContent .occasionDesc .occasionBtns button {
+    width: 100%;
+    padding: 0;
+    height: 50px;
+  }
+}
 
 #cateringDetailsPart {
   max-width: 100%;
@@ -514,10 +584,20 @@ li {
   justify-content: center;
   padding: 0;
 }
+@media (max-width: 568px) {
+  #cateringDetailsPart .container .cateringDetailsContent {
+    flex-direction: column;
+  }
+}
 #cateringDetailsPart .container .cateringDetailsContent .cateringDetailsItem {
   max-width: 30%;
   margin: 20px;
   text-align: center;
+}
+@media (max-width: 568px) {
+  #cateringDetailsPart .container .cateringDetailsContent .cateringDetailsItem {
+    max-width: 50%;
+  }
 }
 #cateringDetailsPart .container .cateringDetailsContent .cateringDetailsItem h2 {
   font-size: 23px;
@@ -541,11 +621,35 @@ li {
   display: flex;
   padding: 0 30px;
 }
+@media (max-width: 768px) {
+  #burgerServicePart .container .burgerServiceContent {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+}
 #burgerServicePart .container .burgerServiceContent .serviceContentItem {
   max-width: 45%;
 }
+@media (max-width: 768px) {
+  #burgerServicePart .container .burgerServiceContent .serviceContentItem {
+    max-width: 80%;
+  }
+}
 #burgerServicePart .container .burgerServiceContent .serviceContentItem:nth-child(2) {
   margin: 0 0px 0 auto;
+}
+@media (max-width: 568px) {
+  #burgerServicePart .container .burgerServiceContent .serviceContentItem:nth-child(2) {
+    margin: 30px 0;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #burgerServicePart .container .burgerServiceContent .serviceContentItem:nth-child(2) {
+    margin: 0;
+  }
 }
 #burgerServicePart .container .burgerServiceContent .serviceContentItem img {
   border-radius: 10px;
@@ -571,6 +675,204 @@ li {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
   line-height: 28px;
+}
+
+#addOns {
+  max-width: 100%;
+  background-color: #ECAD2F;
+  padding: 50px 0 30px;
+}
+#addOns .container {
+  padding: 30px 0 50px;
+  max-width: 1200px;
+  overflow: hidden;
+}
+@media (max-width: 568px) {
+  #addOns .container {
+    max-width: 100%;
+    padding: 0px 0 20px;
+  }
+}
+#addOns .container h2 {
+  text-align: center;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  margin: 30px 0 0;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 30px;
+}
+@media (max-width: 568px) {
+  #addOns .container h2 {
+    font-size: 28px;
+    margin-top: 0;
+  }
+}
+#addOns .container .row {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 568px) {
+  #addOns .container .row {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #addOns .container .row {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#addOns .container .row .addOnsCardCol {
+  padding: 0;
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #addOns .container .row .addOnsCardCol {
+    margin: 20px 0;
+  }
+}
+#addOns .container .row .addOnsCardCol .addOnesCard {
+  background-color: white;
+  max-width: 100%;
+  padding: 0 0 30px 0;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+@media (max-width: 568px) {
+  #addOns .container .row .addOnsCardCol .addOnesCard {
+    margin: 20px 0;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #addOns .container .row .addOnsCardCol .addOnesCard {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+#addOns .container .row .addOnsCardCol .addOnesCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#addOns .container .row .addOnsCardCol .addOnesCard h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  margin: 30px 0 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#corporateCards {
+  max-width: 100%;
+  padding: 80px 0;
+}
+#corporateCards .container {
+  padding: 0;
+  max-width: 1200px;
+}
+#corporateCards .container .corporateCardsContent {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  #corporateCards .container .corporateCardsContent {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+#corporateCards .container .corporateCardsContent .corporateCardImg {
+  max-width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media (max-width: 568px) {
+  #corporateCards .container .corporateCardsContent .corporateCardImg {
+    max-width: 100%;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #corporateCards .container .corporateCardsContent .corporateCardImg {
+    max-width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #corporateCards .container .corporateCardsContent .corporateCardImg {
+    max-width: 60%;
+  }
+}
+#corporateCards .container .corporateCardsContent .corporateCardImg img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#corporateCards .container .corporateCardsContent .corporateCardDesc {
+  max-width: 40%;
+}
+@media (max-width: 568px) {
+  #corporateCards .container .corporateCardsContent .corporateCardDesc {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #corporateCards .container .corporateCardsContent .corporateCardDesc {
+    max-width: 80%;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #corporateCards .container .corporateCardsContent .corporateCardDesc {
+    max-width: 60%;
+    margin-top: 50px;
+  }
+}
+#corporateCards .container .corporateCardsContent .corporateCardDesc h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 1024px) {
+  #corporateCards .container .corporateCardsContent .corporateCardDesc h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+#corporateCards .container .corporateCardsContent .corporateCardDesc p {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  line-height: 28px;
+}
+#corporateCards .container .corporateCardsContent .corporateCardDesc p.boldText {
+  font-weight: bold;
+}
+#corporateCards .container .corporateCardsContent .corporateCardDesc button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #417d9b;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  #corporateCards .container .corporateCardsContent .corporateCardDesc button {
+    width: 100%;
+    height: 50px;
+  }
+}
+#corporateCards .container .corporateCardsContent .corporateCardDesc button i {
+  margin-left: 12px;
 }
 
 footer {
