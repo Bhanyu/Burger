@@ -73,7 +73,7 @@ footer{
           align-items: center;
           padding-top: 0;
              }
-            div{
+             .footFaqItem{
             
               width: 30%;
               font-family: "Barlow Condensed", sans-serif;
@@ -81,10 +81,21 @@ footer{
             
                 margin: 0;
                 width: 100%;
+
+
+
              &:nth-child(2){
               margin: 20px 0;
              }
                    }
+
+                   &.activeFootNav{
+
+  
+                    .footNav{
+                     display: block;
+                    }
+                    }
              .colTitle{
             
               width: 100%;
@@ -131,10 +142,12 @@ footer{
                      }
               }
              }
-              ul{
+              .footNav{
                 @media (max-width:1024px) {
              display: none;
+            
                      }
+                   
                 li{
                   margin: 15px 0;
                   a{

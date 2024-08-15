@@ -9,6 +9,7 @@ const rowOrderWays = document.getElementById('rowOrderWays')
 const topHeadClose = document.querySelector(".close")
 const dropdown = document.querySelector(".dropdown");
 const menu = document.querySelector(".navItem1")
+const footFaqCols = document.querySelectorAll(".footFaqItem")
 mobMenuBar.addEventListener("click", function(){
     mobMenuBar.style.display = "none"
     closeBar.style.display = "block"
@@ -164,3 +165,26 @@ topHeadClose.addEventListener("click", ()=>{
 menu.addEventListener("click", ()=>{
    dropdown.classList.toggle("showMenu")
 })
+footFaqCols.forEach((footFaqItem)=>{
+    footFaqItem.addEventListener("click", ()=>{
+        if (!footFaqItem.classList.contains("activeFootNav")) {
+            removeFoodNavItem()
+            footFaqItem.classList.add("activeFootNav")
+            footFaqItem.firstElementChild.lastElementChild.innerHTML ='-'
+            
+        }
+
+        else{
+            footFaqItem.classList.remove("activeFootNav")
+            footFaqItem.firstElementChild.lastElementChild.innerHTML ='+'
+        }
+    })
+})
+
+
+function removeFoodNavItem(){
+    footFaqCols.forEach(footFaqItem =>{
+        footFaqItem.classList.remove("activeFootNav")
+        footFaqItem.firstElementChild.lastElementChild.innerHTML ='+'
+    })
+}

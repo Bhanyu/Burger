@@ -893,31 +893,34 @@ footer .container .mainfooter .footLinks .innerLinks {
     padding-top: 0;
   }
 }
-footer .container .mainfooter .footLinks .innerLinks div {
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem {
   width: 30%;
   font-family: "Barlow Condensed", sans-serif;
 }
 @media (max-width: 1024px) {
-  footer .container .mainfooter .footLinks .innerLinks div {
+  footer .container .mainfooter .footLinks .innerLinks .footFaqItem {
     margin: 0;
     width: 100%;
   }
-  footer .container .mainfooter .footLinks .innerLinks div:nth-child(2) {
+  footer .container .mainfooter .footLinks .innerLinks .footFaqItem:nth-child(2) {
     margin: 20px 0;
   }
 }
-footer .container .mainfooter .footLinks .innerLinks div .colTitle {
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem.activeFootNav .footNav {
+  display: block;
+}
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem .colTitle {
   width: 100%;
 }
 @media (max-width: 1024px) {
-  footer .container .mainfooter .footLinks .innerLinks div .colTitle {
+  footer .container .mainfooter .footLinks .innerLinks .footFaqItem .colTitle {
     display: flex;
     justify-content: space-between;
     padding: 15px 5px 10px;
     border-bottom: 1px solid white;
   }
 }
-footer .container .mainfooter .footLinks .innerLinks div .colTitle h2 {
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem .colTitle h2 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 22px;
   margin-bottom: 15px;
@@ -926,15 +929,15 @@ footer .container .mainfooter .footLinks .innerLinks div .colTitle h2 {
   width: 100%;
 }
 @media (max-width: 1024px) {
-  footer .container .mainfooter .footLinks .innerLinks div .colTitle h2 {
+  footer .container .mainfooter .footLinks .innerLinks .footFaqItem .colTitle h2 {
     color: white;
   }
 }
-footer .container .mainfooter .footLinks .innerLinks div .colTitle button {
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem .colTitle button {
   display: none;
 }
 @media (max-width: 1024px) {
-  footer .container .mainfooter .footLinks .innerLinks div .colTitle button {
+  footer .container .mainfooter .footLinks .innerLinks .footFaqItem .colTitle button {
     display: block;
     font-size: 30px;
     padding: 0 2px;
@@ -950,14 +953,14 @@ footer .container .mainfooter .footLinks .innerLinks div .colTitle button {
   }
 }
 @media (max-width: 1024px) {
-  footer .container .mainfooter .footLinks .innerLinks div ul {
+  footer .container .mainfooter .footLinks .innerLinks .footFaqItem .footNav {
     display: none;
   }
 }
-footer .container .mainfooter .footLinks .innerLinks div ul li {
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem .footNav li {
   margin: 15px 0;
 }
-footer .container .mainfooter .footLinks .innerLinks div ul li a {
+footer .container .mainfooter .footLinks .innerLinks .footFaqItem .footNav li a {
   color: white;
   font-size: 23px;
   font-weight: 600;

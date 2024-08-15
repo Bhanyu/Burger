@@ -2,6 +2,13 @@ const cateringDetailsContent = document.querySelector('.cateringDetailsContent')
 const burgerServiceContent = document.querySelector(".burgerServiceContent")
 const addOnesRow=document.querySelector(".addOnesContent")
 
+
+const footFaqCols = document.querySelectorAll(".footFaqItem")
+// const footChooseShow = document.querySelectorAll("chooseShow")
+// const footNav = document.querySelectorAll(".footNav")
+
+
+
 const mobMenuBar = document.querySelector(".showBtn")
 const mobMenuContent= document.querySelector(".menuMobContent");
 
@@ -11,6 +18,9 @@ const rowOrderWays = document.getElementById('rowOrderWays')
 
 const dropdown = document.querySelector(".dropdown");
 const menu = document.querySelector(".navItem1")
+
+
+
 mobMenuBar.addEventListener("click", function(){
     mobMenuBar.style.display = "none"
     closeBar.style.display = "block"
@@ -103,3 +113,29 @@ addOnes.forEach((addOne)=>{
     </div>`
     addOnesRow.innerHTML += addOneHTML
 })
+
+
+
+footFaqCols.forEach((footFaqItem)=>{
+    footFaqItem.addEventListener("click", ()=>{
+        if (!footFaqItem.classList.contains("activeFootNav")) {
+            removeFoodNavItem()
+            footFaqItem.classList.add("activeFootNav")
+            footFaqItem.firstElementChild.lastElementChild.innerHTML ='-'
+            
+        }
+
+        else{
+            footFaqItem.classList.remove("activeFootNav")
+            footFaqItem.firstElementChild.lastElementChild.innerHTML ='+'
+        }
+    })
+})
+
+
+function removeFoodNavItem(){
+    footFaqCols.forEach(footFaqItem =>{
+        footFaqItem.classList.remove("activeFootNav")
+        footFaqItem.firstElementChild.lastElementChild.innerHTML ='+'
+    })
+}

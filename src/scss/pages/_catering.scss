@@ -437,12 +437,20 @@ span{
         //   }
     .addOnsCardCol{
       padding: 0;
-
+ 
+      @media (max-width:568px) {
+   
+        margin: 20px auto;
+ max-width: 70%;
+        
+     
+       }
     @media(min-width:569px) and (max-width:768px) {
    
   
-      margin: 20px 0;
-    
+      margin: 30px 0;
+      max-width: 60%;
+ 
 
      }
       .addOnesCard{
@@ -451,14 +459,14 @@ span{
     padding: 0 0 30px 0;
     border-radius: 10px;
     margin: 0 15px;
-    @media (max-width:568px) {
-      margin: 20px 0;
-       }
-       @media(min-width:569px) and (max-width:768px) {
+    // @media (max-width:568px) {
    
-      
-        width: 60%;
-        margin: 0 auto;
+    //    }
+       @media (max-width:768px) {
+   
+        margin: 0 0;
+        width: 100%;
+
      
        }
         img{
