@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/scss/smashRewards.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <div class="bottomhead">
+          <div class="burgerMenu">
+            <div class="menubar">
+              <i class="fa-solid fa-bars showBtn"></i>
+              <i class="fa-solid fa-xmark hiddenClose"></i>
+            </div>
+            <div class="menuMobContent">
+              <ul class="mainMobnav">
+                <li>
+                  <a class="menu navMobItem" href="#">
+                    Menu <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="navMobItem"
+                    href="http://127.0.0.1:5500/catering.html"
+                    >Catering <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="navMobItem"
+                    href="http://127.0.0.1:5500/smashRewards.html"
+                    >SmashRewards <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="navMobItem" href="#"
+                    >Deals <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="navMobItem" href="#"
+                    >Nutrition <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="navMobItem" href="#"
+                    >Locations <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="logo">
+            <a href="http://127.0.0.1:5500/">
+              <img
+                class="show"
+                src="https://logos-world.net/wp-content/uploads/2021/04/Smashburger-Logo.png"
+                alt=""
+              />
+              <img
+                class="hidden"
+                src="https://nmgprod.s3.amazonaws.com/media/files/79/8e/798ee36529dc2cdc121456549c0b0051/cover_image_1617194867.png.760x400_q85_crop_upscale.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <nav>
+            <div class="navigation">
+              <ul class="mainnav">
+                <li>
+                  <a class="menu navItem1" href="#">
+                    Menu <i class="fa-solid fa-caret-down"></i
+                  ></a>
+                  <div class="dropdown">
+                    <div class="dropdownList">
+                      <ul class="dropdownUl">
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/burgers_category_image_322e80bbda.png"
+                              alt=""
+                            />
+                            SIGNATURE BURGERS
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/grilled_chicken_category_image_d2e9f3ddd0.png"
+                              alt=""
+                            />
+                            GRILLED CHICKEN</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/salad_category_image_fb1a45681b.png"
+                              alt=""
+                            />
+                            SALAD</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="	https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/beverages_category_image_3897f9734a.png"
+                              alt=""
+                            />
+                            BEVERAGES</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="dropdownUl">
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/burgers_category_image_322e80bbda.png"
+                              alt=""
+                            />
+                            SIGNATURE BURGERS
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/grilled_chicken_category_image_d2e9f3ddd0.png"
+                              alt=""
+                            />
+                            GRILLED CHICKEN</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/salad_category_image_fb1a45681b.png"
+                              alt=""
+                            />
+                            SALAD</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="	https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/beverages_category_image_3897f9734a.png"
+                              alt=""
+                            />
+                            BEVERAGES</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="dropdownUl">
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/burgers_category_image_322e80bbda.png"
+                              alt=""
+                            />
+                            SIGNATURE BURGERS
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/grilled_chicken_category_image_d2e9f3ddd0.png"
+                              alt=""
+                            />
+                            GRILLED CHICKEN</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/salad_category_image_fb1a45681b.png"
+                              alt=""
+                            />
+                            SALAD</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="viewmore">
+                      <button>VIEW MENU</button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="navItem" href="http://127.0.0.1:5500/catering.html"
+                    >Catering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navItem"
+                    href="http://127.0.0.1:5500/smashRewards.html"
+                    >SmashRewards</a
+                  >
+                </li>
+                <li>
+                  <a class="navItem" href="#">Deals</a>
+                </li>
+                <li><a class="navItem" href="#">Nutrition</a></li>
+                <li><a class="navItem" href="#">Locations</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="contactside">
+            <div class="signin">
+              <a href="#"> Sign In <i class="fa-regular fa-user"></i></a>
+            </div>
+            <div class="shopbag">
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="signUpIn">
+        <div class="container">
+          <ul class="homeCatering">
+            <li>
+              <a href="http://127.0.0.1:54762/index.html"
+                ><i class="fa-solid fa-house"></i> <span> > </span>
+              </a>
+            </li>
+            <li>
+              <a class="linkText" href="http://127.0.0.1:54762/catering.html"
+                >SMASHREWARDS</a
+              >
+            </li>
+          </ul>
+          <div class="rewardRegistration">
+            <div class="innerDesc">
+              <p class="miniTitle">SMASHREWARDS</p>
+              <h1>AN EXTRA SIDE OF FREE.</h1>
+              <p>
+                Collect points with every bite. It's fast, easy and delicious,
+                plus you'll get FREE fries after your first purchase. *<a
+                  class="participating"
+                  href="#"
+                  >See participating Locations</a
+                >
+              </p>
+
+              <div class="registrationBtns">
+                <button class="signUp">SIGN UP</button>
+                <button class="signIn">SIGN IN</button>
+              </div>
+            </div>
+            <div class="innerImg">
+              <img
+                src="https://smashburger.com/cdn-cgi/image/format=auto,width=1220,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_phone_12fd6578a5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="workingDetails">
+        <div class="container">
+          <div class="workingDetailsTitle">
+            <h2>HOW IT WORKS</h2>
+            <p>
+              *Terms and conditions apply. Click here to view
+              <a class="titleLink" href="#">terms</a>
+            </p>
+          </div>
+          <div class="row workingDetailsInner"></div>
+        </div>
+      </section>
+
+      <section id="diggingProcess">
+        <div class="container">
+          <div class="diggingProcessTitle">
+            <h2>LET'S DIG IN</h2>
+            <p class="thickText">Every dollar = 10 points.**</p>
+            <p class="thickText">
+              Collect and redeem them for flavorful freebies and other prizes
+            </p>
+            <p>
+              The more you earn, the faster you win. The chart below shows how
+              quickly rewards can add up when you join.
+            </p>
+            <p>
+              **See terms and conditions <a class="titleLink" href="#">here</a>
+            </p>
+          </div>
+          <div class="diggingProcessInner">
+            <table>
+              <tbody>
+                <tr class="tableHead">
+                  <th class="tableHeadinner">REWARDS</th>
+                  <td class="tableHeadinnertd"></td>
+                </tr>
+                <tr>
+                  <th>Add Bacon, Avocado, or Haystack Onions</th>
+                  <td><div>250</div></td>
+                </tr>
+                <tr>
+                  <th>Fountain Sodas or Iced Tea</th>
+                  <td><div>350</div></td>
+                </tr>
+                <tr>
+                  <th>Fries, Tots, or Haystack Onions</th>
+                  <td><div>600</div></td>
+                </tr>
+                <tr>
+                  <th>Shakes</th>
+                  <td><div>1K</div></td>
+                </tr>
+                <tr>
+                  <th>Classic or Bacon Smash® Burger</th>
+                  <td><div>1.5K</div></td>
+                </tr>
+                <tr>
+                  <th>Double Classic or Double Bacon Smash® Burger</th>
+                  <td><div>1.8K</div></td>
+                </tr>
+                <tr>
+                  <th>Grilled or Crispy Chicken Sandwich</th>
+                  <td class="tableHeadinnerlasttd"><div>1.8K</div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="levelUp">
+        <div class="container">
+          <div class="levelUpTitle">
+            <h2>LEVEL UP</h2>
+            <p>
+              Visit enough annually and we’ll promote you to a higher tier for a
+              faster track to premium offers
+            </p>
+          </div>
+          <div class="levelUpInner">
+            <img
+              src="https://smashburger.com/cdn-cgi/image/format=auto,width=600,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/super_d1a76c2ed4.png"
+              alt=""
+            />
+            <h3>Super Smasher</h3>
+            <ul>
+              <li>3+ visits each calendar year</li>
+              <li>Exclusive offers, rewards and challenges</li>
+              <li>
+                VIP benefits like early access to seasonal burgers, shakes and
+                more!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="burgerServicePart">
+        <div class="container">
+          <div class="burgerServiceContent">
+            <div class="serviceContentItem">
+              <img
+                src="https://smashburger.com/cdn-cgi/image/format=auto,width=640,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_team_kitchen_0625eada68.jpg"
+                alt=""
+              />
+              <h3>HAVE QUESTIONS?</h3>
+              <p>We got you covered</p>
+              <button class="signIn">GO TO FAQ'S</button>
+            </div>
+            <div class="serviceContentItem">
+              <img
+                src="https://smashburger.com/cdn-cgi/image/format=auto,width=640,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_guest_at_register_77f5665bc2.jpg"
+                alt=""
+              />
+              <h3>CLAIM YOUR POINTS</h3>
+              <p>
+                Did you forget to scan your app for points? Log in to your
+                account, select rewards and enter the code from your receipt to
+                claim points!
+              </p>
+              <button class="signIn">CLAIM NOW</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="advertising">
+        <div class="container">
+          <div class="rewardRegistration">
+            <div class="innerDesc">
+              <h2>THE BETTER WAY TO BETTER BURGERS</h2>
+              <p>
+                Download our app for the easiest way to order, earn points, and
+                get free food.
+              </p>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/google-play-badge.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/app-store-badge.svg"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="innerImg">
+              <img
+                src="https://smashburger.com/cdn-cgi/image/format=auto,width=768,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_phone_with_tots_768a154996.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="oneFooter">
+      <div class="container">
+        <div class="mainfooter">
+          <div class="footLogo">
+            <img
+              src="https://nmgprod.s3.amazonaws.com/media/files/79/8e/798ee36529dc2cdc121456549c0b0051/cover_image_1617194867.png.760x400_q85_crop_upscale.png"
+              alt=""
+            />
+          </div>
+          <div class="footLinks">
+            <div class="innerLinks">
+              <div class="footFaqItem">
+                <div class="colTitle">
+                  <h2>ABOUT US</h2>
+                  <button class="chooseShow">+</button>
+                </div>
+
+                <ul class="footNav">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Our Food</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Locations</a></li>
+                </ul>
+              </div>
+              <div class="footFaqItem">
+                <div class="colTitle">
+                  <h2>SMASHBURGER SERVICES</h2>
+                  <button class="chooseShow">+</button>
+                </div>
+
+                <ul class="footNav">
+                  <li><a href="#">Rewards</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Deals</a></li>
+                </ul>
+              </div>
+              <div class="footFaqItem">
+                <div class="colTitle">
+                  <h2>INQUIRES</h2>
+                  <button class="chooseShow">+</button>
+                </div>
+
+                <ul class="footNav">
+                  <li><a href="#">Franchising</a></li>
+                  <li><a href="#">F.A.Q</a></li>
+                  <li><a href="#">CA Supply Chain</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="smmLinks">
+              <h2>FOLLOW US</h2>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="appLinks">
+            <h2>DOWNLOAD OUR APP</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/google-play-badge.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://smashburger.com/cdn-cgi/image/format=auto,width=300,quality=75/app-store-badge.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottomFoot">
+          <p>
+            This site is protected by reCAPTCHA and the Google
+            <a href="#"> Privacy Policy </a>and
+            <a href="#">Terms of Service</a> apply
+          </p>
+          <hr />
+          <ul class="bottomList">
+            <li>©2024 Smashburger IP Holder LLC. All rights reserved</li>
+            <li><a href="#">Accesibility</a></li>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy and Policy</a></li>
+            <li><a href="#">Dont Show or Share My Personal Information</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./javascript/smashReward.js"></script>
+  </body>
+</html>
