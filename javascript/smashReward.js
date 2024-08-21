@@ -1,7 +1,7 @@
 
 const workingDetailsInner = document.querySelector(".workingDetailsInner")
 const footFaqCols = document.querySelectorAll(".footFaqItem")
-
+const viewmoreBtn = document.querySelector(".viewmoreBtn")
 const mobMenuBar = document.querySelector(".showBtn")
 const mobMenuContent= document.querySelector(".menuMobContent");
 const closeBar = document.querySelector(".hiddenClose")
@@ -10,6 +10,11 @@ const rowOrderWays = document.getElementById('rowOrderWays')
 
 const dropdown = document.querySelector(".dropdown");
 const menu = document.querySelector(".navItem1")
+
+viewmoreBtn.addEventListener('click', function () {
+    window.location.href = "http://127.0.0.1:5500/menu.html"
+})
+
 
 const workingDetails = [
     {

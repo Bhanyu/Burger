@@ -19,7 +19,10 @@ const rowOrderWays = document.getElementById('rowOrderWays')
 const dropdown = document.querySelector(".dropdown");
 const menu = document.querySelector(".navItem1")
 
-
+const viewmoreBtn = document.querySelector(".viewmoreBtn")
+viewmoreBtn.addEventListener('click', function () {
+    window.location.href = "http://127.0.0.1:5500/menu.html"
+})
 
 mobMenuBar.addEventListener("click", function(){
     mobMenuBar.style.display = "none"
