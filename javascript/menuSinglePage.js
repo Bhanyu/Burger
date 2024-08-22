@@ -119,3 +119,28 @@ const burgerCount = document.querySelector(".burgerCount")
 
    
    const addToCartBtn = document.querySelector(".addToCartBtn")
+addToCartBtn.addEventListener("click", ()=>{
+    const currentCount = Number(burgerCount.innerHTML);
+    addToCartFunc(selectedBurger, currentCount)
+})
+function addToCartFunc(burger, count) {
+    let sebet = JSON.parse(localStorage.getItem('sebet')) || [];
+
+    const existingProductIndex = sebet.findIndex(item => item.id === burger.id);
+
+    if (existingProductIndex !== -1) {
+        sebet[existingProductIndex].miqdar += count;
+    } else {
+        sebet.push({
+            id: burger.id,
+            ad: burger.burgerBtn,
+            qiymet: parseFloat(burger.burgerPrice.replace('$', '')),
+            img: burger.burgerImg,  // Məhsul şəkilini əlavə edirik
+            miqdar: count
+        });
+    }
+
+    localStorage.setItem('sebet', JSON.stringify(sebet));
+
+    alert('Məhsul səbətə əlavə olundu!');
+}

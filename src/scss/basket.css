@@ -322,17 +322,17 @@ li {
     padding: 30px 0 30px 30px;
   }
 }
-#basketPage .container .basketPlace {
+#basketPage .container .basketHeader {
   max-width: 100%;
   text-align: center;
 }
-#basketPage .container .basketPlace h1 {
+#basketPage .container .basketHeader h1 {
   font-family: "Barlow Condensed", sans-serif;
   margin-bottom: 50px;
   font-size: 70px;
   font-weight: 700;
 }
-#basketPage .container .basketPlace button {
+#basketPage .container .basketHeader button {
   padding: 12px 40px;
   border-radius: 5px;
   border: none;
