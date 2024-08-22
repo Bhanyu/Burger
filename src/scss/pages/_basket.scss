@@ -1,0 +1,66 @@
+#basketPage{
+  
+    max-width: 100%;
+    padding: 50px 0;
+    .container{
+        padding: 0 ;
+       
+        .homeCatering{
+        
+            display: flex;
+            padding: 30px 0;
+           
+            li{
+                margin: 0 10px;
+                
+                a{
+                    color:#7d7d7d;
+                  text-decoration: none;
+                      font-family: $primaryFont;
+                      font-size: 20px;
+                      font-weight: 600;
+                      &.linkText{
+                        color:black
+                                            }
+                  
+    
+    span{
+    margin-left: 20px;
+    }
+                }
+            }
+            @media (max-width:1024px) {
+             padding: 30px 0 30px  30px;
+            }
+        }
+        .basketPlace{
+          
+            max-width: 100%;
+            text-align: center;
+            h1{
+                font-family: $primaryFont;
+                margin-bottom: 50px;
+                font-size: 70px;
+                font-weight: 700;
+            }
+            button{
+                
+                 
+                    padding: 12px 40px;
+                    border-radius: 5px;
+                    border: none;
+       
+                    font-family: $primaryFont;
+                 
+                    color: #000000;
+                   font-size: 20px;
+                    font-weight: 600;
+                  
+                    background-color: $fifthColor;
+                
+              
+            }
+        }
+        
+}
+}

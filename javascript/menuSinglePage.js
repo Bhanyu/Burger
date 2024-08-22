@@ -118,4 +118,4 @@ const burgerCount = document.querySelector(".burgerCount")
   })
 
    
-   
+   const addToCartBtn = document.querySelector(".addToCartBtn")
