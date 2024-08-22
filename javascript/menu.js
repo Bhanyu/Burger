@@ -1,26 +1,13 @@
-// const mobMenuBar = document.querySelector(".showBtn")
-// const mobMenuContent= document.querySelector(".menuMobContent");
-// const closeBar = document.querySelector(".hiddenClose")
+
 const dropdown = document.querySelector(".dropdown");
 const menu = document.querySelector(".navItem1")
-// mobMenuBar.addEventListener("click", function(){
-//     mobMenuBar.style.display = "none"
-//     closeBar.style.display = "block"
 
-//     mobMenuContent.style.display = "block"
-// })
-
-
-// closeBar.addEventListener(("click"), function () {
-//     mobMenuBar.style.display = "block"
-//     closeBar.style.display = "none"
- 
-//     mobMenuContent.style.display = "none"
-// })
-
+const   rowBurgersMenu = document.getElementById('burgerMenuBox')
 menu.addEventListener("click", ()=>{
     dropdown.classList.toggle("showMenu")
  })
+
+
 const burgers = [
     {
         id:1, burgerImg: "https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_classic_single_167e7ca495.png",
@@ -65,6 +52,11 @@ const burgers = [
         id:9, burgerImg: "https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_shakes_b256258dba.png",
         burgerBtn:"HANDS SPUN SHAKE"
 
+    },
+    {
+        id:10, burgerImg: "https://smashburger.com/cdn-cgi/image/format=auto,width=480,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/beverages_category_image_3897f9734a.png",
+        burgerBtn:"BEVERAGES"
+
     }
 ]
 burgers.forEach((burger)=>{
@@ -73,21 +65,24 @@ burgers.forEach((burger)=>{
 
     const menuCard = document.createElement('div');
     menuCard.classList.add('menuCard');
-
+    menuCard.addEventListener('click', () => {
+        window.location.href = `http://127.0.0.1:5500/menuSinglePage.html?id=${burger.id}`; // Redirects to burger-details.html with the burger's id as a query parameter
+    });
     const burgerImg = document.createElement('div');
     burgerImg.classList.add('burgerImg');
     const img = document.createElement('img')
     img.src = burger.burgerImg;
     burgerImg.appendChild(img);
-
-    const menuCardBtn = document.createElement('div');
+const hoverImg = document.createElement('img')
+hoverImg.src = "https://smashburger.com/cdn-cgi/image/format=auto,width=768,quality=75/_next/static/media/smasher-lines.ecd1081a.svg";
+hoverImg.classList.add('hoverImg')
+burgerImg.appendChild(hoverImg)    
+const menuCardBtn = document.createElement('div');
     menuCardBtn.classList.add('menuCardBtn');
-    const btn = document.createElement('button');
-    btn.textContent = burger.burgerBtn;
-    menuCardBtn.appendChild(btn);
-btn.addEventListener("click", ()=>{
-   window.location.href = `homeSinglePage.html?id=${burger.id}`
-})
+    const menuDesc = document.createElement('p');
+    menuDesc.textContent = burger.burgerBtn;
+    menuCardBtn.appendChild(menuDesc);
+
     menuCard.appendChild(burgerImg)
     menuCard.appendChild(menuCardBtn)
     colDiv.appendChild(menuCard);
