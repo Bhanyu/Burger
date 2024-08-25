@@ -194,12 +194,12 @@ li {
 #main-header .container .bottomhead nav .navigation .mainnav li .dropdown {
   position: absolute;
   flex-direction: column;
-  top: 18%;
+  top: 100%;
   background-color: beige;
   left: 0;
   width: 100%;
   display: none;
-  padding: 50px 0 30px;
+  padding: 20px 0 0;
   z-index: -1;
 }
 #main-header .container .bottomhead nav .navigation .mainnav li .dropdown.showMenu {
@@ -213,8 +213,10 @@ li {
 }
 #main-header .container .bottomhead nav .navigation .mainnav li .dropdown .dropdownList {
   display: flex;
-  padding-left: 5%;
   max-width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 1024px) {
   #main-header .container .bottomhead nav .navigation .mainnav li .dropdown .dropdownList {
@@ -241,7 +243,7 @@ li {
   align-items: center;
 }
 #main-header .container .bottomhead nav .navigation .mainnav li .dropdown .dropdownList .dropdownUl li a img {
-  max-width: 25%;
+  max-width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 20px;
@@ -297,6 +299,11 @@ li {
 #menuInner .container .homeCatering {
   display: flex;
   padding: 30px 0;
+}
+@media (max-width: 768px) {
+  #menuInner .container .homeCatering {
+    display: none;
+  }
 }
 #menuInner .container .homeCatering li {
   margin: 0 10px;

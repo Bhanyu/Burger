@@ -8,6 +8,10 @@
         
         display: flex;
         padding: 30px 0;
+        @media (max-width:768px) {
+      display: none;
+            
+                             }
        
         li{
             margin: 0 10px;

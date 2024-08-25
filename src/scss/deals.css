@@ -292,612 +292,334 @@ li {
   color: #ffffff;
 }
 
-#signUpIn {
+#dealsPage {
   max-width: 100%;
-  padding-bottom: 80px;
+  padding: 50px 0;
 }
-@media (max-width: 1024px) {
-  #signUpIn {
-    padding-bottom: 50px;
-  }
-}
-#signUpIn .container {
-  max-width: 1200px;
-  margin: 0 auto;
+#dealsPage .container {
   padding: 0;
 }
 @media (max-width: 1024px) {
-  #signUpIn .container {
+  #dealsPage .container {
+    padding: 0 10px;
     max-width: 100%;
   }
 }
-#signUpIn .container .homeCatering {
+#dealsPage .container .homeCatering {
   display: flex;
-  padding: 30px 0 0;
+  padding: 0px 0 20px;
 }
 @media (max-width: 768px) {
-  #signUpIn .container .homeCatering {
+  #dealsPage .container .homeCatering {
     display: none;
   }
 }
-#signUpIn .container .homeCatering li {
+#dealsPage .container .homeCatering li {
   margin: 0 10px;
 }
-#signUpIn .container .homeCatering li a {
+#dealsPage .container .homeCatering li a {
   color: #7d7d7d;
   text-decoration: none;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
-#signUpIn .container .homeCatering li a.linkText {
+#dealsPage .container .homeCatering li a.linkText {
   color: black;
 }
-#signUpIn .container .homeCatering li a span {
+#dealsPage .container .homeCatering li a span {
   margin-left: 20px;
 }
 @media (max-width: 1024px) {
-  #signUpIn .container .homeCatering {
+  #dealsPage .container .homeCatering {
     padding: 30px 0 30px 30px;
   }
 }
-#signUpIn .container .rewardRegistration {
-  display: flex;
-  justify-content: space-between;
+#dealsPage .container .dealsHeader {
   max-width: 100%;
-  margin-top: 50px;
+  text-align: center;
 }
-@media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px;
-  }
-}
-#signUpIn .container .rewardRegistration .innerDesc {
-  max-width: 45%;
-  padding-right: 50px;
-}
-@media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration .innerDesc {
-    max-width: 100%;
-    padding: 0;
-  }
-}
-#signUpIn .container .rewardRegistration .innerDesc .miniTitle {
+#dealsPage .container .dealsHeader h1 {
   font-family: "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  color: #417d9b;
-  letter-spacing: 0.1px;
-}
-#signUpIn .container .rewardRegistration .innerDesc h1 {
-  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 50px;
   font-size: 70px;
   font-weight: 700;
 }
-@media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration .innerDesc h1 {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-#signUpIn .container .rewardRegistration .innerDesc p {
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-  line-height: 28px;
-}
-#signUpIn .container .rewardRegistration .innerDesc p .participating {
-  text-decoration: underline;
-  margin-left: 2px;
-  color: #417d9b;
-}
-#signUpIn .container .rewardRegistration .innerDesc .registrationBtns {
-  display: flex;
-}
-@media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration .innerDesc .registrationBtns {
-    flex-direction: column;
-  }
-}
-#signUpIn .container .rewardRegistration .innerDesc .registrationBtns button {
-  background-color: #7d7d7d;
+#dealsPage .container .dealsHeader button {
   padding: 12px 40px;
   border-radius: 5px;
   border: none;
-  background-color: #ECAD2F;
   font-family: "Barlow Condensed", sans-serif;
+  color: #000000;
   font-size: 20px;
   font-weight: 600;
-  margin-top: 12px;
+  background-color: #ECAD2F;
 }
-#signUpIn .container .rewardRegistration .innerDesc .registrationBtns button.signIn {
-  margin-left: 30px;
-  background-color: #417d9b;
-  color: white;
+
+#shakePart {
+  background-color: #A1CCDD;
+  max-width: 100%;
+  position: relative;
 }
-@media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration .innerDesc .registrationBtns button.signIn {
-    margin: 20px 0 0;
+#shakePart .container {
+  max-width: 100%;
+  padding: 20px 0 40px;
+}
+@media (max-width: 568px) {
+  #shakePart .container {
+    padding: 30px;
   }
 }
-#signUpIn .container .rewardRegistration .innerDesc .registrationBtns button i {
-  margin-left: 12px;
-}
-@media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration .innerDesc .registrationBtns button {
-    width: 100%;
-    height: 50px;
-    margin-top: 8px;
-    padding: 0;
-    text-align: center;
+@media (min-width: 569px) and (max-width: 768px) {
+  #shakePart .container {
+    padding: 30px 60px;
   }
 }
-#signUpIn .container .rewardRegistration .innerImg {
-  max-width: 50%;
-  border-radius: 5px;
+@media (min-width: 768px) and (max-width: 1024px) {
+  #shakePart .container {
+    padding: 30px 90px;
+  }
+}
+#shakePart .container .shakeContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 40px 35px;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (max-width: 1024px) {
-  #signUpIn .container .rewardRegistration .innerImg {
+  #shakePart .container .shakeContent {
+    flex-direction: column;
+    padding: 40px 0 25px;
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#shakePart .container .shakeContent .shakeImg {
+  width: 45%;
+}
+@media (max-width: 1024px) {
+  #shakePart .container .shakeContent .shakeImg {
+    width: 100%;
+  }
+}
+#shakePart .container .shakeContent .shakeImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shakePart .container .shakeContent .shakeDesc {
+  width: 44%;
+}
+@media (max-width: 1024px) {
+  #shakePart .container .shakeContent .shakeDesc {
+    width: 100%;
+    padding: 0 30px;
     margin-top: 30px;
   }
 }
-#signUpIn .container .rewardRegistration .innerImg img {
-  width: 100%;
-  border-radius: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#workingDetails {
-  max-width: 100%;
-  padding: 80px 0;
-  background-color: #A1CCDD;
-}
-#workingDetails .container {
-  padding: 0;
-  overflow: hidden;
-}
-#workingDetails .container .workingDetailsTitle {
-  text-align: center;
-  font-family: "Barlow Condensed", sans-serif;
-}
-#workingDetails .container .workingDetailsTitle h2 {
-  font-size: 40px;
-  font-weight: 600;
-}
-#workingDetails .container .workingDetailsTitle p {
-  font-size: 20px;
-}
-#workingDetails .container .workingDetailsTitle p a {
-  color: black;
-  text-decoration: underline;
-}
-#workingDetails .container .workingDetailsInner .workingDetailsInnerBox {
-  max-width: 100%;
-  text-align: center;
-  margin: 20px 0;
-}
-#workingDetails .container .workingDetailsInner .workingDetailsInnerBox img {
-  max-width: 100%;
-}
-#workingDetails .container .workingDetailsInner .workingDetailsInnerBox h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  margin-top: 30px;
-}
-
-#diggingProcess {
-  padding: 80px 0;
-}
-#diggingProcess .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#diggingProcess .container .diggingProcessTitle {
-  text-align: center;
-  font-family: "Barlow Condensed", sans-serif;
-}
-#diggingProcess .container .diggingProcessTitle h2 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-#diggingProcess .container .diggingProcessTitle p {
-  font-size: 20px;
-}
-#diggingProcess .container .diggingProcessTitle p.thickText {
-  font-weight: 600;
-  font-size: 24px;
-}
-#diggingProcess .container .diggingProcessTitle p .titleLink {
-  color: black;
-  text-decoration: underline;
-}
-#diggingProcess .container .diggingProcessInner {
-  padding: 70px 0 0;
-  width: 100%;
-}
-#diggingProcess .container .diggingProcessInner table {
-  width: 60%;
-  margin: 0 auto;
-}
-@media (max-width: 568px) {
-  #diggingProcess .container .diggingProcessInner table {
-    width: 90%;
-  }
-}
-@media (min-width: 569px) and (max-width: 768px) {
-  #diggingProcess .container .diggingProcessInner table {
-    width: 80%;
-  }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  #diggingProcess .container .diggingProcessInner table {
-    width: 70%;
-  }
-}
-#diggingProcess .container .diggingProcessInner table tbody {
-  width: 100%;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr {
-  border-bottom: 1px solid #ECAD2F;
-  height: 70px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr:last-child {
-  border-bottom: none;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr th {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr td {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 20px;
-  background-color: #A1CCDD;
-  padding: 0px 55px;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr td.tableHeadinnertd {
-  border-radius: 10px 10px 0 0;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr td.tableHeadinnerlasttd {
-  border-radius: 0 0 10px 10px;
-}
-@media (max-width: 992px) {
-  #diggingProcess .container .diggingProcessInner table tbody tr td {
-    padding: 0 40px;
-  }
-}
-#diggingProcess .container .diggingProcessInner table tbody tr td div {
-  background-color: white;
-  padding: 5px 15px;
-  text-align: center;
-  border-radius: 10%;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr.tableHead {
-  font-size: 25px;
-}
-#diggingProcess .container .diggingProcessInner table tbody tr.tableHead .tableHeadinner {
-  font-size: 28px;
-}
-
-#levelUp {
-  background-color: #ECAD2F;
-  max-width: 100%;
-  padding: 80px 0;
-}
-#levelUp .container .levelUpTitle {
-  text-align: center;
-}
-#levelUp .container .levelUpTitle h2 {
-  font-weight: 700;
-  font-size: 40px;
-  font-family: "Barlow Condensed", sans-serif;
-}
-#levelUp .container .levelUpTitle p {
-  font-size: 17px;
-  margin-top: 25px;
-}
-#levelUp .container .levelUpInner {
-  background-color: white;
-  margin: 20px auto 0;
-  width: 50%;
-  padding: 0 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  color: #403f3f;
-}
-@media (max-width: 568px) {
-  #levelUp .container .levelUpInner {
-    width: 90%;
-  }
-}
-@media (min-width: 569px) and (max-width: 768px) {
-  #levelUp .container .levelUpInner {
-    width: 90%;
-  }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  #levelUp .container .levelUpInner {
-    width: 70%;
-  }
-}
-#levelUp .container .levelUpInner img {
-  margin-bottom: 30px;
-}
-#levelUp .container .levelUpInner h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 25px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-#levelUp .container .levelUpInner ul li {
-  margin: 8px 0;
-  list-style-type: disc;
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-}
-
-#burgerServicePart {
-  background-color: white;
-  max-width: 100%;
-  padding: 80px 0 100px;
-}
-@media (max-width: 768px) {
-  #burgerServicePart {
-    padding: 0 0 20px;
-  }
-}
-#burgerServicePart .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
-#burgerServicePart .container .burgerServiceContent {
-  max-width: 100%;
-  display: flex;
-  padding: 0 30px;
-}
-@media (max-width: 768px) {
-  #burgerServicePart .container .burgerServiceContent {
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-  }
-}
-@media (min-width: 569px) and (max-width: 768px) {
-  #burgerServicePart .container .burgerServiceContent {
-    padding: 0 60px;
-  }
-}
-#burgerServicePart .container .burgerServiceContent .serviceContentItem {
-  width: 45%;
-  text-align: center;
-  overflow: hidden;
-}
-@media (max-width: 768px) {
-  #burgerServicePart .container .burgerServiceContent .serviceContentItem {
-    width: 100%;
-  }
-}
-#burgerServicePart .container .burgerServiceContent .serviceContentItem:nth-child(2) {
-  margin: 0 0px 0 auto;
-}
-@media (max-width: 768px) {
-  #burgerServicePart .container .burgerServiceContent .serviceContentItem:nth-child(2) {
-    margin: 30px 0;
-  }
-}
-#burgerServicePart .container .burgerServiceContent .serviceContentItem img {
-  border-radius: 10px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 350px;
-  margin-bottom: 12px;
-}
-@media (max-width: 568px) {
-  #burgerServicePart .container .burgerServiceContent .serviceContentItem img {
-    height: 300px;
-    border-radius: 0;
-  }
-}
-#burgerServicePart .container .burgerServiceContent .serviceContentItem h3 {
-  font-family: "Barlow Condensed", sans-serif;
+#shakePart .container .shakeContent .shakeDesc h2 {
   font-size: 35px;
-  margin: 20px 0;
+  margin-bottom: 20px;
   font-weight: 700;
-  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
 }
 @media (max-width: 1024px) {
-  #burgerServicePart .container .burgerServiceContent .serviceContentItem h3 {
+  #shakePart .container .shakeContent .shakeDesc h2 {
     text-align: center;
     font-size: 28px;
   }
 }
-#burgerServicePart .container .burgerServiceContent .serviceContentItem p {
+#shakePart .container .shakeContent .shakeDesc p {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
   line-height: 28px;
 }
-#burgerServicePart .container .burgerServiceContent .serviceContentItem button {
-  padding: 12px 40px;
+#shakePart .container .shakeContent .shakeDesc a {
+  font-size: 17px;
+  font-family: "Barlow", sans-serif;
+  line-height: 28px;
+  color: #000000;
+}
+#shakePart .container .shakeContent .shakeDesc .additionBtns {
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  #shakePart .container .shakeContent .shakeDesc .additionBtns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+#shakePart .container .shakeContent .shakeDesc .additionBtns .locations {
+  min-width: 250px;
+  min-height: 50px;
+  font-size: 20px;
+  margin-left: 20px;
+  color: #000000;
+  border: 3px solid #000000;
+  font-weight: 600;
   border-radius: 5px;
-  border: none;
+  background-color: transparent;
   font-family: "Barlow Condensed", sans-serif;
+}
+@media (max-width: 1024px) {
+  #shakePart .container .shakeContent .shakeDesc .additionBtns .locations {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
+#shakePart .container .shakeContent .shakeDesc .additionBtns .orderNow {
   background-color: #417d9b;
   color: white;
+  min-width: 220px;
+  min-height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  #shakePart .container .shakeContent .shakeDesc .additionBtns .orderNow {
+    width: 100%;
+  }
+}
+
+#occasionPart {
+  background-color: #fcfaed;
+  max-width: 100%;
+  position: relative;
+}
+#occasionPart .container {
+  max-width: 100%;
+  padding: 40px 0;
+}
+@media (max-width: 568px) {
+  #occasionPart .container {
+    padding: 30px;
+  }
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  #occasionPart .container {
+    padding: 30px 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #occasionPart .container {
+    padding: 30px 90px;
+  }
+}
+#occasionPart .container .occasionContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 40px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  #occasionPart .container .occasionContent {
+    flex-direction: column;
+    padding: 40px 0 25px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#occasionPart .container .occasionContent .occasionImg {
+  width: 42%;
+  border-radius: 5px;
+}
+@media (max-width: 1024px) {
+  #occasionPart .container .occasionContent .occasionImg {
+    width: 100%;
+  }
+}
+#occasionPart .container .occasionContent .occasionImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+#occasionPart .container .occasionContent .occasionDesc {
+  width: 48%;
+}
+@media (max-width: 1024px) {
+  #occasionPart .container .occasionContent .occasionDesc {
+    width: 100%;
+    padding: 0 30px;
+    margin-top: 30px;
+  }
+}
+#occasionPart .container .occasionContent .occasionDesc h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 1024px) {
+  #occasionPart .container .occasionContent .occasionDesc h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+#occasionPart .container .occasionContent .occasionDesc p {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  line-height: 28px;
+}
+#occasionPart .container .occasionContent .occasionDesc a {
+  font-size: 19px;
+  font-family: "Barlow", sans-serif;
+  line-height: 28px;
+  color: #417d9b;
+  text-decoration: underline;
+}
+#occasionPart .container .occasionContent .occasionDesc .occasionBtns {
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  #occasionPart .container .occasionContent .occasionDesc .occasionBtns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+#occasionPart .container .occasionContent .occasionDesc .occasionBtns button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  border: 3px solid #000000;
+  background-color: transparent;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin-top: 12px;
 }
-
-#advertising {
-  max-width: 100%;
-  padding: 100px 0;
-  background-color: #A1CCDD;
+#occasionPart .container .occasionContent .occasionDesc .occasionBtns button i {
+  margin-left: 12px;
 }
 @media (max-width: 1024px) {
-  #advertising {
-    padding: 30px 0 50px;
-  }
-}
-#advertising .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
-@media (max-width: 1024px) {
-  #advertising .container {
-    max-width: 100%;
-  }
-}
-#advertising .container .rewardRegistration {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  margin-top: 50px;
-}
-@media (max-width: 1024px) {
-  #advertising .container .rewardRegistration {
-    flex-direction: column;
-    justify-content: center;
+  #occasionPart .container .occasionContent .occasionDesc .occasionBtns button {
+    width: 100%;
     padding: 0;
-    align-items: center;
-    padding: 0 20px;
+    height: 50px;
   }
-}
-#advertising .container .rewardRegistration .innerDesc {
-  max-width: 45%;
-  padding-right: 50px;
-}
-@media (max-width: 568px) {
-  #advertising .container .rewardRegistration .innerDesc {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-}
-@media (min-width: 569px) and (max-width: 768px) {
-  #advertising .container .rewardRegistration .innerDesc {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  #advertising .container .rewardRegistration .innerDesc {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-}
-#advertising .container .rewardRegistration .innerDesc h2 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-@media (max-width: 1024px) {
-  #advertising .container .rewardRegistration .innerDesc h2 {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-}
-#advertising .container .rewardRegistration .innerDesc p {
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-  line-height: 28px;
-}
-@media (max-width: 1024px) {
-  #advertising .container .rewardRegistration .innerDesc p {
-    font-size: 24px;
-  }
-}
-#advertising .container .rewardRegistration .innerDesc ul {
-  display: flex;
-  margin-top: 80px;
-  justify-content: start;
-  align-items: start;
-}
-@media (max-width: 992px) {
-  #advertising .container .rewardRegistration .innerDesc ul {
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 993px) and (max-width: 1024px) {
-  #advertising .container .rewardRegistration .innerDesc ul {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-}
-#advertising .container .rewardRegistration .innerDesc ul li {
-  display: block;
-  height: 60px;
-}
-#advertising .container .rewardRegistration .innerDesc ul li:nth-child(2) {
-  margin: 0 20px;
-}
-@media (max-width: 992px) {
-  #advertising .container .rewardRegistration .innerDesc ul li:nth-child(2) {
-    margin: 20px 0 0;
-  }
-}
-#advertising .container .rewardRegistration .innerDesc ul li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-#advertising .container .rewardRegistration .innerDesc ul li a img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#advertising .container .rewardRegistration .innerImg {
-  max-width: 50%;
-  border-radius: 5px;
-}
-@media (max-width: 1024px) {
-  #advertising .container .rewardRegistration .innerImg {
-    max-width: 100%;
-    margin-top: 50px;
-  }
-}
-#advertising .container .rewardRegistration .innerImg img {
-  width: 100%;
-  border-radius: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 footer {
@@ -1206,4 +928,4 @@ footer .container .bottomFoot ul li a {
 }
 footer .container .bottomFoot ul li a img {
   max-width: 90%;
-}/*# sourceMappingURL=smashRewards.css.map */
+}/*# sourceMappingURL=deals.css.map */

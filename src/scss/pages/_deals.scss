@@ -1,0 +1,336 @@
+
+#dealsPage{
+  
+    max-width: 100%;
+    padding: 50px 0;
+ 
+    .container{
+        padding: 0 ;
+        @media (max-width:1024px) {
+      padding: 0 10px;
+         max-width: 100%;
+    
+                       }
+                       .homeCatering{
+        
+                        display: flex;
+                        padding: 0px 0 20px;
+                        @media (max-width:768px) {
+                      display: none;
+                            
+                                             }
+                       
+                        li{
+                            margin: 0 10px;
+                            
+                            a{
+                                color:#7d7d7d;
+                              text-decoration: none;
+                                  font-family: $primaryFont;
+                                  font-size: 20px;
+                                  font-weight: 600;
+                                  &.linkText{
+                                    color:black
+                                                        }
+                              
+                
+                span{
+                margin-left: 20px;
+                }
+                            }
+                        }
+                        @media (max-width:1024px) {
+                         padding: 30px 0 30px  30px;
+                        }
+                    }
+        .dealsHeader{
+          
+            max-width: 100%;
+            text-align: center;
+            
+          
+            h1{
+                font-family: $primaryFont;
+                margin-bottom: 50px;
+                font-size: 70px;
+                font-weight: 700;
+               
+            }
+            button{
+                
+                 
+                    padding: 12px 40px;
+                    border-radius: 5px;
+                    border: none;
+       
+                    font-family: $primaryFont;
+                 
+                    color: #000000;
+                   font-size: 20px;
+                    font-weight: 600;
+                  
+                    background-color: $fifthColor;
+                
+              
+            }
+         
+        }
+       
+}
+}
+
+
+#shakePart{
+    background-color: $sixthColor;
+    max-width: 100%;
+    position: relative;
+  
+ 
+    .container{
+    
+      max-width: 100%;
+      padding: 20px 0 40px;
+      @media (max-width:568px) {
+       padding: 30px;
+      }
+      @media(min-width:569px) and (max-width:768px) {
+       padding: 30px 60px;
+      }
+      @media(min-width:768px) and (max-width:1024px) {
+        padding: 30px 90px;
+       }
+      .shakeContent{
+        max-width: 1200px;
+        margin: 0 auto;
+     
+        border-radius: 10px;
+        display: flex;
+        padding: 40px 35px;
+        align-items: center;
+        justify-content:space-between;
+        @media (max-width:1024px) {
+          flex-direction: column;
+          padding: 40px 0 25px;
+          max-width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+        .shakeImg{
+          // background-color: red;
+          width: 45%;
+          @media (max-width:1024px) {
+         width: 100%;
+          }
+          img{
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .shakeDesc{
+          width: 44%;
+          @media (max-width:1024px) {
+  width: 100%;
+  padding: 0 30px;
+  margin-top: 30px;
+          }
+          // background-color: blueviolet;
+         
+          h2{
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-family: "Barlow Condensed", sans-serif;
+            @media (max-width:1024px) {
+             text-align: center;
+             font-size: 28px;
+           
+            }
+          }
+          p{
+            font-size: 18px;
+            font-family: "Barlow", sans-serif;
+            line-height: 28px;
+          }
+          a{
+            font-size: 17px;
+            font-family: "Barlow", sans-serif;
+            line-height: 28px;
+            color: #000000;
+          }
+          .additionBtns{
+           
+            padding: 0 ;
+            margin-top: 20px;
+       
+         display: flex;
+         align-items: center;
+         @media (max-width:1024px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+        }
+            .locations{
+            min-width: 250px;
+            min-height: 50px;
+            font-size: 20px;
+            margin-left: 20px;
+           
+            color: #000000;
+            border: 3px solid #000000;
+          
+            font-weight: 600;
+            border-radius: 5px;
+            background-color: transparent;
+            font-family: "Barlow Condensed", sans-serif;
+            @media (max-width:1024px) {
+             width: 100%;
+         
+             margin: 20px 0 0 0;
+            }
+            }    
+          .orderNow{
+            background-color: $secondaryColor;
+            color: white;
+            min-width: 220px;
+            min-height: 50px;
+         border: none;
+            border-radius: 5px;
+          
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            @media (max-width:1024px) {
+            width: 100%;
+         
+            }
+          }
+          }
+        }
+      }
+    }
+  }
+
+  #occasionPart{
+    background-color: #fcfaed;
+    max-width: 100%;
+    position: relative;
+
+  
+    .container{
+    
+      max-width: 100%;
+      padding: 40px 0;
+      @media (max-width:568px) {
+       padding: 30px;
+      }
+      @media(min-width:569px) and (max-width:768px) {
+       padding: 30px 60px;
+      }
+      @media(min-width:768px) and (max-width:1024px) {
+        padding: 30px 90px;
+       }
+      .occasionContent{
+        max-width: 1200px;
+        margin: 0 auto;
+        // background-color:white;
+        border-radius: 10px;
+        display: flex;
+        padding: 40px 0px;
+        justify-content:space-between;
+        align-items: center;
+        @media (max-width:1024px) {
+          flex-direction: column;
+          padding: 40px 0 25px;
+          max-width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+        .occasionImg{
+          // background-color: red;
+          width: 42%;
+          border-radius: 5px;
+          @media (max-width:1024px) {
+         width: 100%;
+          }
+          img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+        }
+        .occasionDesc{
+          width: 48%;
+          @media (max-width:1024px) {
+  width: 100%;
+  padding: 0 30px;
+  margin-top: 30px;
+          }
+          // background-color: blueviolet;
+         
+          h2{
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: bold;
+            @media (max-width:1024px) {
+             text-align: center;
+             font-size: 28px;
+             font-weight: 700;
+            }
+          }
+          p{
+            font-size: 18px;
+            font-family: "Barlow", sans-serif;
+            line-height: 28px;
+         
+          }
+          a{
+            font-size: 19px;
+            font-family: "Barlow", sans-serif;
+            line-height: 28px;
+            color: $secondaryColor;
+            text-decoration: underline;
+          }
+          .occasionBtns{
+           
+            padding: 0 ;
+            margin-top: 20px;
+       
+         display: flex;
+         align-items: center;
+         @media (max-width:1024px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+        }
+            
+            button{
+            
+                padding: 10px 40px;
+                border-radius: 5px;
+                border: none;
+                color: #000000;
+            border: 3px solid #000000;
+            background-color: transparent;
+                font-family: $primaryFont;
+               font-size: 20px;
+                font-weight: 600;
+                margin-top: 12px;
+               
+                i{
+                    margin-left: 12px;
+                }
+                @media (max-width:1024px) {
+                 width: 100%;
+                 padding: 0;
+                 height: 50px;
+                 }
+              }
+          
+          }
+        }
+      }
+    }
+  }
