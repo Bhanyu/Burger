@@ -293,6 +293,11 @@ li {
 #singlePage {
   max-width: 100%;
 }
+@media (max-width: 1024px) {
+  #singlePage {
+    padding: 0px 0 50px;
+  }
+}
 #singlePage .container {
   padding: 0;
 }
@@ -323,9 +328,22 @@ li {
 }
 #singlePage .container .orderContent {
   display: flex;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  #singlePage .container .orderContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #singlePage .container .orderContent .indDiv {
   width: 40%;
+}
+@media (max-width: 1024px) {
+  #singlePage .container .orderContent .indDiv {
+    width: 60%;
+  }
 }
 #singlePage .container .orderContent .indDiv img {
   width: 100%;
@@ -336,6 +354,17 @@ li {
   width: 50%;
   margin-left: auto;
   font-family: "Barlow Condensed", sans-serif;
+}
+@media (max-width: 1024px) {
+  #singlePage .container .orderContent .orderSchedule {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 #singlePage .container .orderContent .orderSchedule h2 {
   font-size: 35px;
@@ -350,6 +379,15 @@ li {
 #singlePage .container .orderContent .orderSchedule .orderScheduleBtns {
   display: flex;
 }
+@media (max-width: 1024px) {
+  #singlePage .container .orderContent .orderSchedule .orderScheduleBtns {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 #singlePage .container .orderContent .orderSchedule .orderScheduleBtns button {
   width: auto;
   padding: 0 15px;
@@ -358,6 +396,14 @@ li {
   border-radius: 5px;
   border: 1px solid #000000;
   background-color: white;
+}
+@media (max-width: 1024px) {
+  #singlePage .container .orderContent .orderSchedule .orderScheduleBtns button {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #singlePage .container .orderContent .orderSchedule .orderScheduleBtns button span {
   width: 40%;
@@ -375,11 +421,18 @@ li {
 }
 #singlePage .container .orderContent .orderSchedule .orderScheduleBtns button.addToCartBtn {
   margin-left: 10px;
-  min-width: 230px;
+  width: 230px;
   background-color: #ECAD2F;
   border: none;
   font-size: 22px;
   font-weight: 600;
+}
+@media (max-width: 1024px) {
+  #singlePage .container .orderContent .orderSchedule .orderScheduleBtns button.addToCartBtn {
+    margin-top: 30px;
+    height: 50px;
+    max-width: 100%;
+  }
 }
 
 footer {

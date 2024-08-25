@@ -124,23 +124,23 @@ addToCartBtn.addEventListener("click", ()=>{
     addToCartFunc(selectedBurger, currentCount)
 })
 function addToCartFunc(burger, count) {
-    let sebet = JSON.parse(localStorage.getItem('sebet')) || [];
+    let basket = JSON.parse(localStorage.getItem('basket')) || [];
 
-    const existingProductIndex = sebet.findIndex(item => item.id === burger.id);
+    const existingProductIndex = basket.findIndex(item => item.id === burger.id);
 
     if (existingProductIndex !== -1) {
-        sebet[existingProductIndex].miqdar += count;
+        basket[existingProductIndex].miqdar += count;
     } else {
-        sebet.push({
+        basket.push({
             id: burger.id,
-            ad: burger.burgerBtn,
-            qiymet: parseFloat(burger.burgerPrice.replace('$', '')),
+            name: burger.burgerBtn,
+            price: parseFloat(burger.burgerPrice.replace('$', '')),
             img: burger.burgerImg,  // Məhsul şəkilini əlavə edirik
-            miqdar: count
+            quantity: count
         });
     }
 
-    localStorage.setItem('sebet', JSON.stringify(sebet));
+    localStorage.setItem('basket', JSON.stringify(basket));
 
-    alert('Məhsul səbətə əlavə olundu!');
+   
 }

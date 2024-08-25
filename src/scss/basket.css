@@ -325,6 +325,10 @@ li {
 #basketPage .container .basketHeader {
   max-width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #basketPage .container .basketHeader h1 {
   font-family: "Barlow Condensed", sans-serif;
@@ -341,6 +345,115 @@ li {
   font-size: 20px;
   font-weight: 600;
   background-color: #ECAD2F;
+}
+#basketPage .container .basketSpace {
+  overflow: hidden;
+}
+#basketPage .container .basketSpace .basketItemProps {
+  background-color: #303c47;
+  display: flex;
+  align-items: center;
+  padding: 30px 60px;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#basketPage .container .basketSpace .basketItemProps p {
+  margin: 0 0 0 100px;
+}
+#basketPage .container .basketSpace .basketItemProps ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+#basketPage .container .basketSpace .basketItemProps ul li:nth-child(2) {
+  margin-left: 70px;
+}
+#basketPage .container .basketSpace .basketContent {
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  border: 1px solid #7d7d7d;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem {
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #7d7d7d;
+  display: flex;
+  align-items: center;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem img {
+  width: 15%;
+  margin-left: 20px;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 23px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem p {
+  font-size: 25px;
+  margin-right: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem button {
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem button.quantityButtons {
+  padding: 12px 25px;
+  margin-left: auto;
+  font-size: 18px;
+  margin-right: 50px;
+  border: 1px solid #7d7d7d;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem button.quantityButtons span {
+  font-size: 30px;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem button.quantityButtons span:nth-child(2) {
+  margin: 0 30px;
+}
+#basketPage .container .basketSpace .basketContent .orderedItem button.removeItem {
+  border: none;
+  color: red;
+  font-size: 20px;
+}
+#basketPage .container .basketSpace .basketTotal {
+  border-radius: 10px;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A1CCDD;
+  padding: 20px;
+}
+#basketPage .container .basketSpace .basketTotal h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+#basketPage .container .basketSpace .basketTotal button {
+  background-color: #ECAD2F;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+#basketPage .container .basketSpace .basketTotal button#clearBasket {
+  background-color: transparent;
+  border: 3px solid #303c47;
 }
 
 footer {
