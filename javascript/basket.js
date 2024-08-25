@@ -34,12 +34,15 @@ basketSpace.style.display = "none"
                 <div class="orderedItem">
                 <button class="removeItem" data-id="${item.id}">X</button>
                     <img src="${item.img}" alt="${item.name}" />
+                    <div class="basketInnerDesc">
                     <h3 class="orderedItemTitle">${item.name}</h3>
                     <button class="quantityButtons">
                         <span class="decrease" data-id="${item.id}">-</span>
                         <span class="burgerCount">${item.quantity}</span>
                         <span class="increase" data-id="${item.id}">+</span>
                     </button>
+                    </div>
+                  
                     <p class="orderedItemPrice">$${itemTotalPrice.toFixed(2)}</p>
                  
                 </div>

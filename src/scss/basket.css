@@ -297,9 +297,20 @@ li {
 #basketPage .container {
   padding: 0;
 }
+@media (max-width: 1024px) {
+  #basketPage .container {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+}
 #basketPage .container .homeCatering {
   display: flex;
   padding: 30px 0;
+}
+@media (max-width: 768px) {
+  #basketPage .container .homeCatering {
+    display: none;
+  }
 }
 #basketPage .container .homeCatering li {
   margin: 0 10px;
@@ -361,8 +372,19 @@ li {
   font-size: 20px;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketItemProps {
+    padding: 30px 0px;
+    justify-content: space-around;
+  }
+}
 #basketPage .container .basketSpace .basketItemProps p {
   margin: 0 0 0 100px;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketItemProps p {
+    margin: 0;
+  }
 }
 #basketPage .container .basketSpace .basketItemProps ul {
   display: flex;
@@ -374,6 +396,11 @@ li {
 }
 #basketPage .container .basketSpace .basketItemProps ul li:nth-child(2) {
   margin-left: 70px;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketItemProps ul li:nth-child(2) {
+    margin-left: 20px;
+  }
 }
 #basketPage .container .basketSpace .basketContent {
   border-radius: 0 0 10px 10px;
@@ -387,44 +414,103 @@ li {
   display: flex;
   align-items: center;
 }
-#basketPage .container .basketSpace .basketContent .orderedItem img {
-  width: 15%;
-  margin-left: 20px;
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem {
+    padding: 20px 10px;
+  }
 }
-#basketPage .container .basketSpace .basketContent .orderedItem h3 {
+#basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-left: auto;
+  }
+}
+#basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc h3 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 23px;
   margin-left: 20px;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc h3 {
+    margin-left: 0;
+  }
+}
+#basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc .quantityButtons {
+  padding: 12px 25px;
+  margin-left: auto;
+  font-size: 18px;
+  margin-right: 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #7d7d7d;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc .quantityButtons {
+    display: flex;
+    margin-right: 0;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+#basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc .quantityButtons span {
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc .quantityButtons span {
+    font-size: 23px;
+  }
+}
+#basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc .quantityButtons span:nth-child(2) {
+  margin: 0 30px;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem .basketInnerDesc .quantityButtons span:nth-child(2) {
+    margin: 0 15px;
+  }
+}
+#basketPage .container .basketSpace .basketContent .orderedItem img {
+  width: 15%;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem img {
+    margin-left: 5px;
+    width: 30%;
+  }
 }
 #basketPage .container .basketSpace .basketContent .orderedItem p {
   font-size: 25px;
   margin-right: 20px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
-}
-#basketPage .container .basketSpace .basketContent .orderedItem button {
-  border-radius: 5px;
-  background-color: transparent;
-  outline: none;
-}
-#basketPage .container .basketSpace .basketContent .orderedItem button.quantityButtons {
-  padding: 12px 25px;
   margin-left: auto;
-  font-size: 18px;
-  margin-right: 50px;
-  border: 1px solid #7d7d7d;
 }
-#basketPage .container .basketSpace .basketContent .orderedItem button.quantityButtons span {
-  font-size: 30px;
-}
-#basketPage .container .basketSpace .basketContent .orderedItem button.quantityButtons span:nth-child(2) {
-  margin: 0 30px;
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketContent .orderedItem p {
+    margin-right: 0;
+    margin-left: 15px;
+  }
 }
 #basketPage .container .basketSpace .basketContent .orderedItem button.removeItem {
   border: none;
   color: red;
   font-size: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
 }
 #basketPage .container .basketSpace .basketTotal {
   border-radius: 10px;
@@ -437,10 +523,22 @@ li {
   background-color: #A1CCDD;
   padding: 20px;
 }
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketTotal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #basketPage .container .basketSpace .basketTotal h3 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 30px;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketTotal h3 {
+    margin-bottom: 20px;
+  }
 }
 #basketPage .container .basketSpace .basketTotal button {
   background-color: #ECAD2F;
@@ -451,9 +549,19 @@ li {
   font-size: 20px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketTotal button {
+    width: 100%;
+  }
+}
 #basketPage .container .basketSpace .basketTotal button#clearBasket {
   background-color: transparent;
   border: 3px solid #303c47;
+}
+@media (max-width: 768px) {
+  #basketPage .container .basketSpace .basketTotal button#clearBasket {
+    margin-top: 20px;
+  }
 }
 
 footer {
