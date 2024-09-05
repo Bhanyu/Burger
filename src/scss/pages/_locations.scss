@@ -1,0 +1,190 @@
+#locationsPart{
+  background-image: url("https://smashburger.com/cdn-cgi/image/format=auto,width=1920,quality=75/https://sbprod-web-assets.s3.us-west-2.amazonaws.com/N5sba1c_f8b46372a8.jpeg");
+    max-width: 100%;
+
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 30px 0;
+    .overlay{
+        position: absolute;
+        background-color: #292929a1;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+      
+    }
+    .container{
+        position: relative;
+    z-index: 1;
+  
+        max-width: 500px;
+//    background-color: red;
+      padding:30px  0;
+        border-radius: 10px;
+
+        .findLocationBox{
+       
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            padding: 30px 40px; 
+            border-radius: 10px;
+            h1{
+                font-family: $primaryFont;
+                margin-bottom: 20px;
+                font-size: 60px;
+                font-weight: 700;
+               
+            }
+            p{
+                font-size: 20px;
+                font-family: $primaryFont;
+                line-height: 28px;
+margin: 15px 0;
+                &.boldText{
+                    font-weight: bold;
+                }
+              }
+              form{
+             
+                width: 100%;
+                // padding: 0 20px;
+                margin: 10px 0 20px ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 18px;
+                // align-items: center;
+                #orderType{
+                    margin-bottom: 20px;
+                    padding: 15px 10px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    option{
+                        padding: 20px 10px;
+                      
+                        font-size: 18px;
+                      
+                    }
+                }
+                .searchBar{
+                    background-color: #ffffff;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0px 10px 0 0px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                
+                    input{
+                       width: 100%;
+                       padding: 10px 10px 15px 15px;
+                       outline: none;
+                       border: none;
+                    }
+                }
+              }
+              .searchLocationdBtns{
+               
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              
+                width: 100%;
+                button{
+       width: 100%;
+                    padding: 15px 0px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: $secondaryColor;
+                    font-family: $primaryFont;
+                   font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 12px;
+                   color: white;
+                   &.searchBtn{
+                    background-color: $fifthColor;
+                    color: #000000;
+                   }
+                   @media (max-width:1024px) {
+                   width: 100%;
+                   height: 50px;
+                           }
+                    i{
+                        margin-left: 12px;
+                    }
+                  }
+              }
+        }
+    }
+}
+
+#smashCountries{
+   
+    max-width: 100%;
+    padding: 50px 0;
+    .container{
+       
+        padding: 0 80px;
+        max-width: 100%;
+        overflow: hidden;
+        .smashCountriesTitle{
+         
+            text-align: center;
+            h2{
+                font-family: $primaryFont;
+                margin-bottom: 20px;
+                font-size: 45px;
+                font-weight: 600;
+               
+            }
+            h3{
+                font-family: $primaryFont;
+                margin: 60px 0 20px;
+                font-size: 30px;
+                font-weight: 700;
+               
+            }
+        }
+        .row{
+          
+            padding: 0 10px;
+         .city{
+      background-color: transparent;
+            text-align: center;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 2px solid #000000;
+            cursor: pointer;
+            text-transform: uppercase;
+            h3{
+                font-family: $primaryFont;
+              
+                font-size: 23px;
+                font-weight: 600;
+               
+            }
+         }
+         
+        }
+        .canada{
+          
+                font-family: $primaryFont;
+                margin: 20px 0;
+                font-size: 30px;
+                font-weight: 700;
+                text-align: center;
+               
+            
+        }
+    }
+}
